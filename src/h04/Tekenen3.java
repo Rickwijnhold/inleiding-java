@@ -1,7 +1,7 @@
 
 package h04;
 
-//Voorbeeld 4.1
+//Voorbeeld 4.3
 
 import java.awt.*;
 import java.applet.*;

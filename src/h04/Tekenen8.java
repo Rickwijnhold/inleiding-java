@@ -7,8 +7,17 @@ import java.applet.*;
 
 public class Tekenen8 extends Applet{
 
+    Color opvulkleur;
+    Color lijnkleur;
+    int breedte;
+    int hoogte;
+
     public void init() {
 setSize(800,800);
+        opvulkleur = Color.MAGENTA;
+        lijnkleur = Color.BLACK;
+        breedte = 200;
+        hoogte = 100;
     }
 
     public void paint(Graphics g) {
@@ -25,22 +34,22 @@ setSize(800,800);
         g.drawString("Cirkel", 870,450);
         g.drawString("Gevulde ovaal", 500,435);
 
-        g.setColor(Color.magenta);
-        g.fillRect(400, 150, 300, 120);
+        g.setColor(opvulkleur);
+        g.fillRect(400, 150, 300, hoogte);
 
-        g.setColor(Color.black);
-        g.drawOval(400, 150, 300, 120);
+        g.setColor(lijnkleur);
+        g.drawOval(400, 150, 300,  hoogte);
 
-        g.setColor(Color.magenta);
-        g.fillOval(400, 300, 300, 120);
+        g.setColor(opvulkleur);
+        g.fillOval(400, 300, 300, hoogte);
 
-        g.setColor(Color.black);
-        g.drawOval(750, 150, 300, 120);
+        g.setColor(lijnkleur);
+        g.drawOval(750, 150, 300, hoogte);
 
-        g.setColor(Color.black);
-        g.drawOval(830, 300, 120, 120);
+        g.setColor(lijnkleur);
+        g.drawOval(830, 300, 120, hoogte);
 
-        g.setColor(Color.magenta);
-        g.fillArc(750, 150, 300, 120, 0, 45);
+        g.setColor(opvulkleur);
+        g.fillArc(750, 150, 300, hoogte, 0, 45);
     }
 }
