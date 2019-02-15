@@ -14,7 +14,7 @@ public class Tekenen8 extends Applet{
 
     public void init() {
 setSize(800,800);
-        opvulkleur = Color.MAGENTA;
+        opvulkleur = Color.blue;
         lijnkleur = Color.BLACK;
         breedte = 200;
         hoogte = 100;

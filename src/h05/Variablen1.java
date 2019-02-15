@@ -49,14 +49,14 @@ public class Variablen1 extends Applet {
         g.drawString("0",25,110);
         g.drawString("Valerie",80,720);
         g.setColor(Valerie);
-        g.fillRect(50,110,100, Zestig );
+        g.fillRect(50,110,100, zero );
         g.setColor(Color.black);
         g.drawString("Jeroen",180,720);
         g.setColor(Jeroen);
-        g.fillRect(150,110,100, Honderd);
+        g.fillRect(150,110,100, Zestig);
         g.setColor(Color.black);
         g.drawString("Hans",280,720);
         g.setColor(Hans);
-        g.fillRect(250,110,100, Achtig);
+        g.fillRect(250,110,100, Veertig);
     }
 }

@@ -12,22 +12,25 @@ public class Hoofdstuk105 extends Applet {
     Button add;
     Label onvoldoende;
     Label gemiddelde;
+    Label Fout;
     double cijfer, totaalcijfer, gemmidelde;
     int i;
     String s;
 
 
     public void init() {
-        setSize(800, 200);
+        setSize(1000,800);
         text = new TextField("", 20);
         add = new Button("bereken");
         onvoldoende = new Label("");
         gemiddelde = new Label("");
+        Fout = new Label("");
         //-----------------------------------------
         add(text);
         add(add);
         add(onvoldoende);
         add(gemiddelde);
+        add(Fout);
         //-----------------------------------------
         add.addActionListener(new addListener());
     }
@@ -45,10 +48,16 @@ public class Hoofdstuk105 extends Applet {
                 onvoldoende.setText("onvoldoende");
                 repaint();
             }
+            if (cijfer >= 10) {
+                Fout.setText("Het cijfer mag niet hoger zijn dan 10");
+            } else {
+                    Fout.setText("");
+                }
             totaalcijfer += cijfer;
             gemmidelde = totaalcijfer / i;
             gemiddelde.setText(String.valueOf(gemmidelde));
             repaint();
+            }
         }
     }
-}
+

@@ -17,8 +17,6 @@ public class Knopopdracht2 extends Applet {
     int vrouw;
     int meisje;
     int jongen;
-    int een;
-    int som;
 
     public void init() {
         knop1 = new Button("Man");
