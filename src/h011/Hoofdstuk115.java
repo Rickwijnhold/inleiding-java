@@ -18,7 +18,7 @@ public class Hoofdstuk115 extends Applet {
 
 
     public void paint(Graphics g) {
-        for (int i = 1; i < 1000 ; i++) {
+        for (int i = 1; i < 6 ; i++) {
             g.drawRect(x,y,10,10);
             x = x+10;
             y= y+10;
