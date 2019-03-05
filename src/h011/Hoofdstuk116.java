@@ -13,6 +13,7 @@ int x;
 int y;
 
     public void init() {
+
 widt = 10;
 height =10;
 x = 100;
@@ -21,7 +22,8 @@ y =100;
 
 
     public void paint(Graphics g) {
-        for (int i = 1; i < 10 ; i++) {
+        
+        for (int i = 1; i < 51 ; i++) {
             g.drawOval(x, y, widt, height);
 
 
